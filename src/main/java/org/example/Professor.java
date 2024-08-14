@@ -105,12 +105,12 @@ public class Professor {
                             String sql = "SELECT * FROM student WHERE id = " + id;
                             Statement st = con.createStatement();
                             ResultSet rs = st.executeQuery(sql);
-                        while (rs.next()) {
-                            System.out.println("ID =" + rs.getInt("id"));
-                            System.out.println("Name =" + rs.getString("name"));
-                            System.out.println("Gender =" + rs.getString("gender"));
-                            System.out.println("Phone Number =" + rs.getString("phone"));
-                        }
+                            while (rs.next()) {
+                                System.out.println("ID =" + rs.getInt("id"));
+                                System.out.println("Name =" + rs.getString("name"));
+                                System.out.println("Gender =" + rs.getString("gender"));
+                                System.out.println("Phone Number =" + rs.getString("phone"));
+                            }
                         }
                     }catch (Exception e){
                         e.printStackTrace();
